@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Papagayos Digital: servicios, experiencias, mapa e información útil para visitar Papagayos, San Luis.">
+  <meta name="theme-color" content="#214d3b">
+  <title>Papagayos Digital | Descubrí Papagayos</title>
+  <link rel="icon" href="assets/icons/logo_papagayos.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Papagayos Digital, inicio">
+      <img src="assets/icons/logo_papagayos.jpeg" alt="" class="brand-logo">
+      <span><strong>Papagayos</strong><small>DIGITAL · SAN LUIS</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i class="fa-solid fa-bars"></i></button>
+    <nav id="nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#experiencias">Descubrir</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#asistencia">Asistencia</a>
+      <a href="#contacto">Contacto</a>
+      <a href="historia.html">Historia</a>
+      <a href="paranormal.html">Leyendas</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> COSTA DE LOS COMECHINGONES · SAN LUIS</p>
+        <h1>Todo Papagayos,<br><em>en un solo lugar.</em></h1>
+        <p class="hero-lead">Naturaleza, cultura y servicios para disfrutar el destino con más información y autonomía.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#mapa"><i class="fa-solid fa-map-location-dot"></i> Explorar el mapa</a>
+          <a class="button button-outline" href="#asistencia"><i class="fa-solid fa-life-ring"></i> Información útil</a>
+        </div>
+        <div class="hero-note"><i class="fa-solid fa-leaf"></i> Descubrí el arroyo, las sierras y las palmeras Caranday.</div>
+      </div>
+      <div class="hero-stamp"><span>DESTINO</span><strong>PAPAGAYOS</strong><span>SAN LUIS · ARGENTINA</span></div>
+    </section>
+
+    <section class="quick-links section-wrap" aria-label="Accesos rápidos">
+      <a href="#servicios"><span class="quick-icon"><i class="fa-solid fa-bed"></i></span><span><strong>Dónde dormir</strong><small>Alojamientos</small></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+      <a href="#gastronomia"><span class="quick-icon"><i class="fa-solid fa-utensils"></i></span><span><strong>Dónde comer</strong><small>Sabores locales</small></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+      <a href="#experiencias"><span class="quick-icon"><i class="fa-solid fa-person-hiking"></i></span><span><strong>Qué hacer</strong><small>Naturaleza y cultura</small></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+      <a href="#asistencia"><span class="quick-icon quick-alert"><i class="fa-solid fa-shield-heart"></i></span><span><strong>Información útil</strong><small>Orientación y ayuda</small></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+    </section>
+
+    <section id="experiencias" class="section-wrap section-space">
+      <div class="section-heading">
+        <div><p class="eyebrow eyebrow-dark">UN DESTINO PARA DESCUBRIR</p><h2>La esencia de Papagayos</h2></div>
+        <p>Un pueblo serrano donde los paisajes, las tradiciones y la hospitalidad invitan a bajar el ritmo y explorar.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card experience-nature">
+          <div class="experience-image"><img src="assets/images/1118.jpg" alt="Paisaje natural de Papagayos" loading="lazy"></div>
+          <div class="experience-copy"><span class="card-kicker">AIRE LIBRE</span><h3>Naturaleza y senderos</h3><p>Arroyo, sierras, palmeras Caranday y rincones para disfrutar del paisaje.</p><a href="#mapa" class="text-link">Explorar ubicaciones <i class="fa-solid fa-arrow-right"></i></a></div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-image"><img src="assets/images/17.jpg" alt="Tradiciones y celebraciones de Papagayos" loading="lazy"></div>
+          <div class="experience-copy"><span class="card-kicker">IDENTIDAD LOCAL</span><h3>Cultura y festividades</h3><p>Celebraciones populares, tradición gaucha y encuentros que reúnen a la comunidad.</p><a href="#agenda" class="text-link">Conocer las fiestas <i class="fa-solid fa-arrow-right"></i></a></div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-image"><img src="assets/images/14.jpg" alt="Paisaje y patrimonio local" loading="lazy"></div>
+          <div class="experience-copy"><span class="card-kicker">MEMORIA Y SABORES</span><h3>Historias del pueblo</h3><p>Conocé la identidad local, sus relatos, la gastronomía y el patrimonio cultural.</p><a href="historia.html" class="text-link">Descubrir historias <i class="fa-solid fa-arrow-right"></i></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicios" class="services-section section-space">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">PLANIFICÁ TU VISITA</p><h2>Servicios para tu viaje</h2></div>
+          <p>Una guía de referencia para encontrar lo que necesitás. Los datos se irán completando y verificando con el relevamiento local.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-icon"><i class="fa-solid fa-bed"></i></span><h3>Alojamientos</h3><p>Opciones para descansar y prolongar tu estadía.</p><span class="status-note"><i class="fa-regular fa-pen-to-square"></i> Fichas en preparación</span></article>
+          <article class="service-card" id="gastronomia"><span class="service-icon"><i class="fa-solid fa-bowl-food"></i></span><h3>Gastronomía</h3><p>Sabores serranos, comidas regionales y propuestas locales.</p><span class="status-note"><i class="fa-regular fa-pen-to-square"></i> Fichas en preparación</span></article>
+          <article class="service-card"><span class="service-icon"><i class="fa-solid fa-person-hiking"></i></span><h3>Actividades y guías</h3><p>Consultá opciones y planificá recorridos con información confiable.</p><span class="status-note"><i class="fa-regular fa-pen-to-square"></i> Datos por validar</span></article>
+          <article class="service-card"><span class="service-icon"><i class="fa-solid fa-calendar-days"></i></span><h3>Eventos y fiestas</h3><p>Fechas tradicionales y encuentros culturales de la localidad.</p><a class="text-link" href="#agenda">Ver agenda <i class="fa-solid fa-arrow-right"></i></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapa" class="section-wrap section-space">
+      <div class="section-heading map-heading">
+        <div><p class="eyebrow eyebrow-dark">ORIENTATE EN EL DESTINO</p><h2>Mapa interactivo</h2></div>
+        <p>Explorá los puntos registrados y filtrá por tipo de lugar. Confirmá la información antes de iniciar un recorrido.</p>
+      </div>
+      <div class="map-panel">
+        <div class="map-toolbar">
+          <div class="map-toolbar-title"><i class="fa-solid fa-location-dot"></i><span><strong>Puntos de interés</strong><small>Datos iniciales del sitio anterior</small></span></div>
+          <div class="filter-buttons" role="group" aria-label="Filtrar ubicaciones del mapa">
+            <button class="filter-btn active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter-btn" data-filter="turismo" aria-pressed="false">Turismo</button>
+            <button class="filter-btn" data-filter="servicios" aria-pressed="false">Servicios</button>
+            <button class="filter-btn" data-filter="espacios" aria-pressed="false">Espacios públicos</button>
+          </div>
+        </div>
+        <div id="map" role="application" aria-label="Mapa interactivo de Papagayos"></div>
+        <div class="map-footnote"><i class="fa-solid fa-circle-info"></i> Las ubicaciones proceden de la versión anterior y deben revisarse antes de considerarse datos oficiales.</div>
+      </div>
+    </section>
+
+    <section id="agenda" class="events-section section-space">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">TRADICIONES QUE NOS UNEN</p><h2>Agenda cultural</h2></div>
+          <p>Celebraciones mencionadas en la información del sitio. Confirmá las fechas de cada edición antes de viajar.</p>
+        </div>
+        <div class="event-grid">
+          <article class="event-card"><div class="event-date"><span>29</span><small>JUN</small></div><div><span class="card-kicker">FIESTA PATRONAL</span><h3>San Pedro Apóstol</h3><p>Misa, procesión, tradición gaucha y encuentro comunitario.</p></div></article>
+          <article class="event-card"><div class="event-date event-date-summer"><span>FEB</span><small>VERANO</small></div><div><span class="card-kicker">FESTIVAL POPULAR</span><h3>Festival de la Palmera Caranday</h3><p>Música, danza, destrezas gauchas, comidas típicas y artesanías.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="asistencia" class="help-section section-space">
+      <div class="section-wrap help-layout">
+        <div class="help-intro"><p class="eyebrow">INFORMACIÓN PARA VIAJAR MEJOR</p><h2>Orientación y asistencia</h2><p>Encontrá respuestas iniciales y accesos a la información útil. Este prototipo no reemplaza los canales oficiales ni los servicios de emergencia.</p><a class="button button-light" href="#contacto"><i class="fa-solid fa-comments"></i> Contactar Turismo</a></div>
+        <div class="help-content">
+          <div class="help-tile"><i class="fa-solid fa-map-location-dot"></i><div><h3>¿Cómo me oriento?</h3><p>Usá el mapa para ubicar puntos de interés y abrí cada marcador para ver su nombre.</p></div></div>
+          <div class="help-tile"><i class="fa-solid fa-phone-volume"></i><div><h3>¿Necesitás un contacto de emergencia?</h3><p>Los teléfonos oficiales deben verificarse antes de publicarse. Ante una emergencia, recurrí a los servicios oficiales disponibles en la localidad.</p></div></div>
+          <div class="assistant-box">
+            <div class="assistant-title"><span class="assistant-avatar"><i class="fa-solid fa-comment-dots"></i></span><div><strong>Asistente Papagayos</strong><small>Respuestas orientativas · versión inicial</small></div><span class="online-dot"></span></div>
+            <div class="chat-log" id="chat-log" aria-live="polite"><p class="chat-message bot-message">¡Hola! Puedo orientarte sobre el mapa, la naturaleza, las fiestas y los servicios incluidos en este prototipo.</p></div>
+            <div class="chat-suggestions"><button data-question="¿Qué puedo conocer en la naturaleza?">Naturaleza</button><button data-question="¿Qué fiestas hay en Papagayos?">Fiestas</button><button data-question="¿Cómo uso el mapa?">Usar el mapa</button></div>
+            <form id="chat-form" class="chat-form"><label class="sr-only" for="chat-input">Escribí tu consulta</label><input id="chat-input" type="text" placeholder="Escribí una consulta..." autocomplete="off"><button aria-label="Enviar consulta"><i class="fa-solid fa-paper-plane"></i></button></form>
+            <p class="prototype-note">Asistente local de demostración; no usa IA ni consulta datos en tiempo real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-wrap section-space contact-section">
+      <div class="contact-copy"><p class="eyebrow eyebrow-dark">ESTAMOS PARA ORIENTARTE</p><h2>Conectá con Papagayos</h2><p>Consultá los canales publicados por Turismo y la Municipalidad. Antes de usar esta web como portal oficial, revisaremos los datos y permisos de cada enlace.</p><a class="button button-primary" href="https://wa.me/5492656481868" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp Turismo</a></div>
+      <div class="contact-socials"><a href="https://www.instagram.com/turismo.papagayos/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span><strong>Turismo Papagayos</strong><small>Instagram</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://www.facebook.com/p/Municipalidad-de-Papagayos-San-Luis-100068932310647/?locale=es_LA" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i><span><strong>Municipalidad de Papagayos</strong><small>Facebook</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://www.instagram.com/municipalidadpapagayos/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span><strong>Municipalidad de Papagayos</strong><small>Instagram</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+    </section>
+    <section class="feedback-band"><div><i class="fa-regular fa-lightbulb"></i><span><strong>¿Encontraste información para mejorar?</strong><small>La revisión de datos ayuda a mantener una guía útil y confiable.</small></span></div><a href="mailto:turismo.papagayos@gmail.com?subject=Sugerencia%20para%20Papagayos%20Digital" class="feedback-link">Enviar sugerencia <i class="fa-solid fa-arrow-right"></i></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><img src="assets/icons/logo_papagayos.jpeg" alt=""><span><strong>Papagayos Digital</strong><small>Una iniciativa para descubrir y conectar con el destino.</small></span></div><div class="footer-links"><a href="historia.html">Historia</a><a href="paranormal.html">Leyendas</a><a href="creditos.html">Créditos</a></div><p class="footer-note">Prototipo educativo · Información en proceso de revisión · © 2026</p></footer>
+  <a href="https://wa.me/5492656481868" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
